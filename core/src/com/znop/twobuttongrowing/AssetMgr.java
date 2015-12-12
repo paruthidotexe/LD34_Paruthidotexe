@@ -59,7 +59,6 @@ public class AssetMgr {
     // fonts
     public static BitmapFont debugFont;
 
-
     private static AssetMgr instance = null;
     private AssetMgr()
     {
@@ -199,4 +198,5 @@ public class AssetMgr {
         }
         return null;
     }
+
 }

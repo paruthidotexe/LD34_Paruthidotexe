@@ -8,10 +8,11 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.znop.twobuttongrowing.screen.MainMenuScreen;
+import com.znop.twobuttongrowing.screen.SplashScreen;
 
 public class TwoButtonGrowing extends Game {
 
-	public static boolean DEBUG = true;
+	public static boolean DEBUG = false;
 
 	@Override
 	public void create () {
@@ -41,10 +42,7 @@ public class TwoButtonGrowing extends Game {
 
 		Gdx.app.debug("Znop", "[javaHeap: " + javaHeap + "] [nativeHeap: " + nativeHeap);
 
-		// Load All
-		AssetMgr.Inst().Init();
-
-		setScreen(new MainMenuScreen(this));
+		setScreen(new SplashScreen(this));
 	}
 
 /*
