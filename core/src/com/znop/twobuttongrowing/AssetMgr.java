@@ -29,8 +29,10 @@ public class AssetMgr {
     Map<String, Music> MusicAssetMapData;
 
     // Folders path
-    private static final String FOLDER_IMAGES = "ponzres" + File.separator
-            + "images" + File.separator;
+    private static final String FOLDER_IMAGES_UI = "ponzres" + File.separator
+            + "images" + File.separator + "ui"  + File.separator;
+    private static final String FOLDER_IMAGES_GAME = "ponzres" + File.separator
+            + "images" + File.separator + "game"  + File.separator;
     private static final String FOLDER_FONTS = "ponzres" + File.separator
             + "fonts" + File.separator;
     private static final String FOLDER_SOUNDS = "ponzres" + File.separator
@@ -39,6 +41,8 @@ public class AssetMgr {
     // font path
     private static final String ASSET_FONT_DEBUGFONT = FOLDER_FONTS
             + "creativeblock15_black.fnt";
+    private static final String ASSET_FONT_GAME = FOLDER_FONTS
+            + "creativeblock30_white.fnt";
 
     // Images
     private Texture Play_Btn;
@@ -58,6 +62,8 @@ public class AssetMgr {
 
     // fonts
     public static BitmapFont debugFont;
+    public static BitmapFont HeadingFont;
+
 
     private static AssetMgr instance = null;
     private AssetMgr()
@@ -77,22 +83,37 @@ public class AssetMgr {
 
         // Texture Assets
         // UI
-        AssetMap.put("Achievement", FOLDER_IMAGES + "Achievement.png");
-        AssetMap.put("Facebook", FOLDER_IMAGES + "Facebook.png");
-        AssetMap.put("Gift", FOLDER_IMAGES + "Gift.png");
-        AssetMap.put("Health", FOLDER_IMAGES + "Health.png");
-        AssetMap.put("HighScore", FOLDER_IMAGES + "HighScore.png");
-        AssetMap.put("Home", FOLDER_IMAGES + "Home.png");
-        AssetMap.put("Pause", FOLDER_IMAGES + "Pause.png");
-        AssetMap.put("Play", FOLDER_IMAGES + "Play.png");
-        AssetMap.put("RateGame", FOLDER_IMAGES + "RateGame.png");
-        AssetMap.put("Restart", FOLDER_IMAGES + "Restart.png");
-        AssetMap.put("SoundOff", FOLDER_IMAGES + "SoundOff.png");
-        AssetMap.put("SoundOn", FOLDER_IMAGES + "SoundOn.png");
-        AssetMap.put("Twitter", FOLDER_IMAGES + "Twitter.png");
-        AssetMap.put("Video", FOLDER_IMAGES + "Video.png");
-        AssetMap.put("Black", FOLDER_IMAGES + "Black.png");
-        AssetMap.put("White", FOLDER_IMAGES + "White.png");
+        AssetMap.put("Achievement", FOLDER_IMAGES_UI + "Achievement.png");
+        AssetMap.put("Facebook", FOLDER_IMAGES_UI + "Facebook.png");
+        AssetMap.put("Gift", FOLDER_IMAGES_UI + "Gift.png");
+        AssetMap.put("Health", FOLDER_IMAGES_UI + "Health.png");
+        AssetMap.put("HighScore", FOLDER_IMAGES_UI + "HighScore.png");
+        AssetMap.put("Home", FOLDER_IMAGES_UI + "Home.png");
+        AssetMap.put("Pause", FOLDER_IMAGES_UI + "Pause.png");
+        AssetMap.put("Play", FOLDER_IMAGES_UI + "Play.png");
+        AssetMap.put("RateGame", FOLDER_IMAGES_UI + "RateGame.png");
+        AssetMap.put("Restart", FOLDER_IMAGES_UI + "Restart.png");
+        AssetMap.put("SoundOff", FOLDER_IMAGES_UI + "SoundOff.png");
+        AssetMap.put("SoundOn", FOLDER_IMAGES_UI + "SoundOn.png");
+        AssetMap.put("Twitter", FOLDER_IMAGES_UI + "Twitter.png");
+        AssetMap.put("Video", FOLDER_IMAGES_UI + "Video.png");
+
+        AssetMap.put("BG_0", FOLDER_IMAGES_GAME + "BG_BW.png");
+        AssetMap.put("BG_1", FOLDER_IMAGES_GAME + "BG_Brown.png");
+        AssetMap.put("BG_2", FOLDER_IMAGES_GAME + "BG_Sepia.png");
+
+        // In Game
+        AssetMap.put("Yin", FOLDER_IMAGES_GAME + "Yin.png");
+        AssetMap.put("Yang", FOLDER_IMAGES_GAME + "Yang.png");
+        AssetMap.put("Black", FOLDER_IMAGES_GAME + "Black.png");
+        AssetMap.put("White", FOLDER_IMAGES_GAME + "White.png");
+        AssetMap.put("White3", FOLDER_IMAGES_GAME + "White3.png");
+        AssetMap.put("BlackBg1", FOLDER_IMAGES_GAME + "BlackBg1.png");
+        AssetMap.put("WhiteBg1", FOLDER_IMAGES_GAME + "WhiteBg1.png");
+        AssetMap.put("BlackBg2", FOLDER_IMAGES_GAME + "BlackBg2.jpg");
+        AssetMap.put("WhiteBg2", FOLDER_IMAGES_GAME + "WhiteBg2.jpg");
+
+        AssetMap.put("parallax_05", FOLDER_IMAGES_GAME + "parallax_05.png");
 
         // SFX Assets
         SoundAssetMap.put("TouchSFX", FOLDER_SOUNDS + "sfx_shot.wav");
@@ -116,6 +137,8 @@ public class AssetMgr {
     public static void LoadFonts()
     {
         debugFont = new BitmapFont(Gdx.files.internal(ASSET_FONT_DEBUGFONT),
+                false);
+        HeadingFont = new BitmapFont(Gdx.files.internal(ASSET_FONT_GAME),
                 false);
     }
 
@@ -155,6 +178,7 @@ public class AssetMgr {
     {
         // dispose fonts
         debugFont.dispose();
+        HeadingFont.dispose();
 
         for(Map.Entry<String, Texture> curEntry: AssetMapData.entrySet()) {
             curEntry.getValue().dispose();

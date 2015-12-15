@@ -11,8 +11,14 @@ import com.znop.twobuttongrowing.AssetMgr;
 import com.znop.twobuttongrowing.TwoButtonGrowing;
 
 /**
- * Created by user on 12-12-2015.
+ * Created by @paruthidotexe on 12-12-2015.
+ * Note: Use this code as u wish, but dont sell the code.
+ *      If any optimizations/ bugs ping me @paruthidotexe
+ *      If you become rich by making games, try like me
+ *      donating 10% to those people who are in need.
+ *      Happy Gaming !!!
  */
+
 public abstract class PonzScreen implements Screen, InputProcessor {
 
     public TwoButtonGrowing gameInst;
@@ -92,13 +98,14 @@ public abstract class PonzScreen implements Screen, InputProcessor {
         fixedStep(delta);
 
         Gdx.gl.glClearColor(0.2f, 0.2f, 0.2f, 1);
+        //Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         spriteBatch.totalRenderCalls = 0;
 
         // render screen graphics
         renderScreen(delta);
-
+/*
         // render fps if in debug mode
         if (isDebug()) {
             spriteBatch.getProjectionMatrix().set(normalProjection);
@@ -108,6 +115,7 @@ public abstract class PonzScreen implements Screen, InputProcessor {
             AssetMgr.debugFont.draw(spriteBatch, "DrawCalls: " + spriteBatch.totalRenderCalls, 100, 20);
             spriteBatch.end();
         }
+        */
     }
 
 

@@ -8,5 +8,11 @@ public class GameConst {
 
     public static final int APP_WIDTH = 1024;
     public static final int APP_HEIGHT = 576;
-    public static final String APP_TITLE = "Two Button Growing";
+    public static final String APP_TITLE = "Ying Yang!!!";
+
+    public static final float V_WIDTH = 1024;
+    public static final float V_HEIGHT = 576;
+
+    public static final float PIXELS_TO_METERS = 100f;
+
 }

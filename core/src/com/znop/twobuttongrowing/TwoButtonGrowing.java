@@ -1,14 +1,18 @@
 package com.znop.twobuttongrowing;
 
 import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.znop.twobuttongrowing.screen.MainMenuScreen;
 import com.znop.twobuttongrowing.screen.SplashScreen;
+
+/**
+ * Created by @paruthidotexe on 12-12-2015.
+ * Note: Use this code as u wish, but dont sell the code.
+ *      If any optimizations/ bugs ping me @paruthidotexe
+ *      If you become rich by making games, try like me
+ *      donating 10% to those people who are in need.
+ *      Happy Gaming !!!
+ */
 
 public class TwoButtonGrowing extends Game {
 

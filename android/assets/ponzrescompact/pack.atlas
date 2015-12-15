@@ -1,0 +1,221 @@
+
+pack.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BG_BW
+  rotate: false
+  xy: 2, 808
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+Game/Baloon_Blue
+  rotate: false
+  xy: 1028, 1318
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/Baloon_Green
+  rotate: false
+  xy: 1286, 1576
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/Baloon_Grey
+  rotate: false
+  xy: 1028, 1060
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/Baloon_Pink
+  rotate: false
+  xy: 1286, 1318
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/Baloon_Red
+  rotate: false
+  xy: 1544, 1576
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/Baloon_Sepia
+  rotate: false
+  xy: 1286, 1060
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/Black
+  rotate: false
+  xy: 1544, 1318
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/Black_Rounded
+  rotate: false
+  xy: 1544, 1060
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/parallax
+  rotate: false
+  xy: 2, 2
+  size: 1023, 226
+  orig: 1023, 226
+  offset: 0, 0
+  index: 5
+SplashScreen
+  rotate: false
+  xy: 2, 230
+  size: 1028, 576
+  orig: 1028, 576
+  offset: 0, 0
+  index: -1
+UI/Achievement
+  rotate: false
+  xy: 1028, 1576
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Facebook
+  rotate: false
+  xy: 1032, 802
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Gift
+  rotate: false
+  xy: 1032, 544
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Health
+  rotate: false
+  xy: 1290, 802
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/HighScore
+  rotate: false
+  xy: 1032, 286
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Home
+  rotate: false
+  xy: 1290, 544
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Pause
+  rotate: false
+  xy: 1290, 286
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Play
+  rotate: false
+  xy: 1548, 802
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/RateGame
+  rotate: false
+  xy: 1548, 544
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Restart
+  rotate: false
+  xy: 1548, 286
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/SoundOff
+  rotate: false
+  xy: 1032, 28
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/SoundOn
+  rotate: false
+  xy: 1290, 28
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Twitter
+  rotate: false
+  xy: 1548, 28
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+
+pack2.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BG_Brown
+  rotate: false
+  xy: 2, 518
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+Game/White
+  rotate: false
+  xy: 1028, 1286
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Game/White_Rounded
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+UI/Video
+  rotate: false
+  xy: 2, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+
+pack3.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BG_Sepia
+  rotate: false
+  xy: 2, 2
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1

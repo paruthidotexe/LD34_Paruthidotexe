@@ -15,7 +15,7 @@ public class SplashScreen extends PonzScreen{
     boolean isLoadInit = false;
     boolean isLoaded = false;
 
-    float loadWaitTime = 1.0f;
+    float loadWaitTime = 0.5f;
 
     Texture splashTexture;
 
